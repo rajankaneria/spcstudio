@@ -40,8 +40,8 @@
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
 		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.1/dist/js/lightgallery.min.js"></script>
 		<script type="text/javascript" src="admin-cp/assets/plugins/light-gallery/js/lightgallery-all.min.js"></script>
-		<!-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/animations/2.1/js/animations.min.js"></script> -->
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/animations/2.1/js/animations.min.js"></script>
 		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 		<!--[if lt IE 9]>
 			<script src="assets/js/html5shiv.js"></script>
@@ -89,11 +89,11 @@ $(function(){$(".scroll").click(function(){$("html,body").animate({scrollTop:$("
 		<h2>Navigate</h2>
 		<nav>
 			<ul class="nav nav-pills nav-stacked">
-				<li><a href="#wrapper" id="home"><i class="fa fa-home"></i> Home</a></li>
-				<li><a href="#portfolio" id="about"><i class="fa fa-bookmark"></i> about</a></li>
-				<li><a href="#photos"><i class="fa fa-picture-o" aria-hidden="true"></i> Services</a></li>
-				<li><a href="#contact"><i class="fa fa-phone-square"></i> Contact</a></li>
-				<li><a href="#join"><i class="fa fa-sign-in" aria-hidden="true"></i> Join Us</a></li>
+				<li><a data-target="wrapper" href="#wrapper" id="home"><i class="fa fa-home"></i> Home</a></li>
+				<li><a data-target="portfolio" href="#portfolio" id="about"><i class="fa fa-bookmark"></i> about</a></li>
+				<li><a data-target="photos" href="#photos"><i class="fa fa-picture-o" aria-hidden="true"></i> Services</a></li>
+				<li><a data-target="contact" href="#contact"><i class="fa fa-phone-square"></i> Contact</a></li>
+				<li><a data-target="join" href="#join"><i class="fa fa-sign-in" aria-hidden="true"></i> Join Us</a></li>
 			</ul>
 		</nav>
 		<div class="social">

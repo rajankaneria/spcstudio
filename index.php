@@ -1,6 +1,6 @@
 <?php include_once'header.php';include_once './admin-cp/config.php';?>
 
-
+<div id="homeDiv"></div>
 <section class="mbr-slider mbr-section mbr-section--no-padding carousel slide" data-ride="carousel" data-wrap="true" data-interval="5000" id="slider-5" style="background:linear-gradient(360deg,rgba(140,0,0,1),rgba(190,0,0,0.9));">
     <div class="mbr-section__container">
         <div>

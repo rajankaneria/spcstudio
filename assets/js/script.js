@@ -136,10 +136,12 @@ $(window).scroll(function () {
 		jQuery.scrollTo("#portfolio", 1000, { offset:-(jQuery('#header .top').height()), axis:'y' });
 	});
 
+	/*
 	jQuery('nav > ul > li > a').click(function(e){
 		e.preventDefault();
 		jQuery.scrollTo(jQuery(this).attr('href'), 400, { offset:-(jQuery('#header .top').height()), axis:'y' });
 	})
+	*/
 
 	jQuery(window).scroll( function() {
 	   /*setHeaderBackground();*/
@@ -152,13 +154,20 @@ $(window).scroll(function () {
 
 })();
 
+function scrollToContainer(selector){
+	$('html, body').animate({scrollTop: $(selector).offset().top -100 }, 'slow');
+}
 
-$(document).ready(function(){
-	$("#home").click(function() {
-	    $('html, body').animate({
-	        scrollTop: $("#homeDiv").offset().top
-	    }, 700);
+$(function(){
+	$(".nav-pills.nav-stacked li a").on("click",function(){
+		var target = $(this).data("target");
+		scrollToContainer("#"+target);
 	});
+});
+
+/*
+$(document).ready(function(){
+
 
 	$("#about").click(function() {
 	    $('html, body').animate({
@@ -185,7 +194,7 @@ $(document).ready(function(){
 	    }, 700);
 	});
 })
-
+*/
 
 
 
